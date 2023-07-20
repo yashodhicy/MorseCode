@@ -1,12 +1,11 @@
-def decode_message (morse_code_message)
-    morse_code_dictionary = {  '.-' => 'A', '-...' => 'B', '-.-.' => 'C', '-..' => 'D',
+def decode_message(morse_code_message)
+    morse_code_dictionary = {'.-' => 'A', '-...' => 'B', '-.-.' => 'C', '-..' => 'D',
         '.' => 'E', '..-.' => 'F', '--.' => 'G', '....' => 'H',
         '..' => 'I', '.---'  => 'J', '-.-'   => 'K', '.-..'  => 'L',
         '--' => 'M', '-.'    => 'N', '---'   => 'O', '.--.'  => 'P',
         '--.-' => 'Q', '.-.' => 'R', '...' => 'S', '-' => 'T',
         '..-' => 'U', '...-' => 'V', '.--' => 'W', '-..-' => 'X',
-        '-.--' => 'Y', '--..' => 'Z'
-    }
+        '-.--' => 'Y', '--..' => 'Z'}
 
     morse_code_words = morse_code_message.split ("   ")
     decoded_message = ''
@@ -17,13 +16,12 @@ def decode_message (morse_code_message)
         end 
         decoded_message += "   "
     end
-    return decoded_message
 end
 
-    result = decode_message("-- -.--   -. .- -- .")
+    result = decode_message('-- -.--   -. .- -- .')
     puts result
     
-    result = decode_message(".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...")
+    result = decode_message('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
     puts result
 
 

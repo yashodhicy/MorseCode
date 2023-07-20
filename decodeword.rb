@@ -1,12 +1,11 @@
 def decode_word(morse_code_word)
-    morse_code_dictionary = {  '.-' => 'A', '-...' => 'B', '-.-.' => 'C', '-..' => 'D',
-        '.' => 'E', '..-.' => 'F', '--.' => 'G', '....' => 'H',
+    morse_code_dictionary = {'.-' => 'A', '-...' => 'B', '-.-.' => 'C', '-..' => 'D',
+         '.' => 'E', '..-.' => 'F', '--.' => 'G', '....' => 'H',
         '..' => 'I', '.---'  => 'J', '-.-'   => 'K', '.-..'  => 'L',
         '--' => 'M', '-.'    => 'N', '---'   => 'O', '.--.'  => 'P',
         '--.-' => 'Q', '.-.' => 'R', '...' => 'S', '-' => 'T',
         '..-' => 'U', '...-' => 'V', '.--' => 'W', '-..-' => 'X',
-        '-.--' => 'Y', '--..' => 'Z'
-    }
+        '-.--' => 'Y', '--..' => 'Z'}
 
     morse_code_letters = morse_code_word.split (" ")
     decoded_word = ''
@@ -16,7 +15,7 @@ def decode_word(morse_code_word)
     return decoded_word
     end
 
-    result = decode_word(" --- -..- ")
+    result = decode_word('--- -..- ')
     puts result
 
 
