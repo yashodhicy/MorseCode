@@ -7,7 +7,7 @@ def decode_word(morse_code_word)
                             '..-' => 'U', '...-' => 'V', '.--' => 'W', '-..-' => 'X',
                             '-.--' => 'Y', '--..' => 'Z' }
 
-  morse_code_letters = morse_code_word.split(' ')
+  morse_code_letters = morse_code_word.split
   decoded_word = ''
   morse_code_letters.each do |letter|
     decoded_word += morse_code_dictionary[letter]

@@ -10,12 +10,13 @@ def decode_message(morse_code_message)
   morse_code_words = morse_code_message.split('   ')
   decoded_message = ''
   morse_code_words.each do |word|
-    morse_code_letters = word.split(' ')
+    morse_code_letters = word.split
     morse_code_letters.each do |letter|
       decoded_message += morse_code_dictionary[letter]
     end
     decoded_message += '   '
   end
+  decoded_message
 end
 
 result = decode_message('-- -.--   -. .- -- .')
